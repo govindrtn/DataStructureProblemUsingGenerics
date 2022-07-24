@@ -5,7 +5,6 @@ public class INode<T>
 	public T data;
 	public INode<T> next;
 	
-	
 	public INode(T data ) 
 	{	
 		this.data = data;

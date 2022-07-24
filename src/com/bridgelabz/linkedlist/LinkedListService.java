@@ -19,4 +19,22 @@ public class LinkedListService<T> {
 			tempNode = tempNode.next;
 		}
 	}
+	
+	public void append(T data) {
+		INode<T> nNode = new INode<T>(data);
+		
+		if (head == null)
+		{
+			head = nNode;
+		}
+		else
+		{
+			INode<T> tempNode = head;
+			while(tempNode.next != null)
+			{
+				tempNode = tempNode.next;
+			}
+			tempNode.next = nNode;
+		}
+	}
 }
