@@ -9,7 +9,6 @@ public class LinkedListService<T> {
 		INode<T> nNode = new INode<T>(data);
 		nNode.data = data;
 		nNode.next = head;	
-		System.out.println();
 		head = nNode;
 	}
 	public void display() {
