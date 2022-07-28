@@ -15,7 +15,7 @@ public class LinkedListService<T> {
 		INode<T> tempNode = head;
 		
 		while (tempNode != null) {
-			System.out.println(tempNode.data);
+			System.out.print(tempNode.data +" ");
 			tempNode = tempNode.next;
 		}
 	}
