@@ -35,7 +35,7 @@ public class LinkedListService<T> {
 		}
 	}
 
-	public void insertAfter(INode<T> prevNode, T data) {
+	public void insertBetween(INode<T> prevNode, T data) {
 		INode<T> nNode = new INode<T>(data);
 		nNode.data = data;
 		nNode.next = prevNode.next;
