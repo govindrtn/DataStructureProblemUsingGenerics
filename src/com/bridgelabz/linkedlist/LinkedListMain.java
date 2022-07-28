@@ -30,7 +30,7 @@ public class LinkedListMain {
 		myObj3.insertBetween(myObj3.head ,30 );
 //		myObj3.insertBetween(myObj3.head ,48 );
 		myObj3.display();
-		System.out.println("Using 'Pop()' method  delete first element :  ");
+		System.out.println("Using 'Pop()' method  delete First element :  ");
 		myObj3.pop();
 		myObj3.display();
 		
