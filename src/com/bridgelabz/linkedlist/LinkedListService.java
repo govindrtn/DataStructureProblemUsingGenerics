@@ -2,7 +2,7 @@ package com.bridgelabz.linkedlist;
 
 public class LinkedListService<T> {
 
-	 INode<T> head;
+	INode<T> head;
 
 	public void add(T data) {
 
@@ -40,5 +40,14 @@ public class LinkedListService<T> {
 		nNode.data = data;
 		nNode.next = prevNode.next;
 		prevNode.next = nNode;
+	}
+
+	public T pop() {
+		if (head == null) {
+			return null;
+		}
+		INode<T> tempNode = head;
+		head = head.next;
+		return tempNode.data;
 	}
 }
