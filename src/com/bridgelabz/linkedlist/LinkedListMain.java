@@ -33,7 +33,10 @@ public class LinkedListMain {
 		System.out.println("Using 'Pop()' method  delete First element :  ");
 		myObj3.pop();
 		myObj3.display();
-		
+		System.out.println("Using 'Pop()' method  delete Last element in linkedList :  ");
+		myObj3.append(56);
+		myObj3.popLast();
+		myObj3.display();
 		
 	}
 }
