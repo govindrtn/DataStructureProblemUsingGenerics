@@ -50,6 +50,7 @@ public class LinkedListService<T> {
 		head = head.next;
 		return tempNode.data;
 	}
+
 	public T popLast() {
 		INode<T> tempNode = head;
 		while (tempNode.next.next != null) {
@@ -57,5 +58,20 @@ public class LinkedListService<T> {
 		}
 		tempNode.next = null;
 		return tempNode.data;
+	}
+
+	public void search(T key) {
+		boolean keyFound = false;
+		INode<T> tempNode = head;
+		while (tempNode != null) {
+			if (tempNode.data == key) {
+				System.out.println("Key Found");
+				keyFound = true;
+			}
+			tempNode = tempNode.next;
+		}
+		if (keyFound == false) {
+			System.out.println("Key is not Found please enter valid Key");
+		}
 	}
 }

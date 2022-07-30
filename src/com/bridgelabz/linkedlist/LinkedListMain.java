@@ -30,13 +30,18 @@ public class LinkedListMain {
 		myObj3.insertBetween(myObj3.head ,30 );
 //		myObj3.insertBetween(myObj3.head ,48 );
 		myObj3.display();
+		
 		System.out.println("Using 'Pop()' method  delete First element :  ");
 		myObj3.pop();
 		myObj3.display();
+		
 		System.out.println("Using 'Pop()' method  delete Last element in linkedList :  ");
 		myObj3.append(56);
 		myObj3.popLast();
 		myObj3.display();
 		
+		System.out.println("Search for a node with the help of Key in LinkedList ");
+		myObj3.search(30);
+		myObj3.display();
 	}
 }
