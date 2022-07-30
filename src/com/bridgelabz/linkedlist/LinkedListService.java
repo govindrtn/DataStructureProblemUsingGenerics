@@ -1,6 +1,6 @@
 package com.bridgelabz.linkedlist;
 
-public class LinkedListService<T> {
+public class LinkedListService<T extends Comparable<T>> {
 
 	INode<T> head;
 
@@ -96,13 +96,15 @@ public class LinkedListService<T> {
 		prevNode.next = tempNode.next;
 
 	}
+
 	public void size() {
 		INode<T> tempNode = head;
 		int count = 0;
-		while(tempNode != null) {
+		while (tempNode != null) {
 			count++;
 			tempNode = tempNode.next;
 		}
 		System.out.println("Size Of LinkedList is : " + count);
 	}
+
 }

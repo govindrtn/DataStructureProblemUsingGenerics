@@ -53,7 +53,9 @@ public class LinkedListMain {
 		myObj3.display();
 		
 		System.out.println("Size of LinkedList");
-		myObj3.add(59);
+		myObj3.add(56);
+		myObj3.append(40);
+		myObj3.append(70);
 		myObj3.size();
 		myObj3.display();
 	}
