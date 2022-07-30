@@ -43,5 +43,9 @@ public class LinkedListMain {
 		System.out.println("Search for a node with the help of Key in LinkedList ");
 		myObj3.search(30);
 		myObj3.display();
+		
+		System.out.println("Insert a Node 80 after node 30 in the linkedList: ");
+		myObj3.InsertAfter(30, 80);
+		myObj3.display();
 	}
 }

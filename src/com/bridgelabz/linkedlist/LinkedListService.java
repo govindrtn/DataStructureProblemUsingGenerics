@@ -74,4 +74,15 @@ public class LinkedListService<T> {
 			System.out.println("Key is not Found please enter valid Key");
 		}
 	}
+
+	public void InsertAfter(T key, T data) {
+		INode<T> newNode = new INode<T>(data);
+		newNode.data = data;
+		INode<T> tempNode = head;
+		while (tempNode.data != key) {
+			tempNode = tempNode.next;
+		}
+		tempNode.next = tempNode.next;
+		tempNode.next = newNode;
+	}
 }
