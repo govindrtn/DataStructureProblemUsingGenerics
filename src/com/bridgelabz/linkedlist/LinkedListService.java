@@ -85,4 +85,15 @@ public class LinkedListService<T> {
 		tempNode.next = tempNode.next;
 		tempNode.next = newNode;
 	}
+
+	public void deleteNode(T key) {
+		INode<T> tempNode = head;
+		INode<T> prevNode = head;
+		while (tempNode.data != key) {
+			prevNode = tempNode;
+			tempNode = tempNode.next;
+		}
+		prevNode.next = tempNode.next;
+
+	}
 }

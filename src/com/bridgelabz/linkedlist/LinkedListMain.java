@@ -47,5 +47,9 @@ public class LinkedListMain {
 		System.out.println("Insert a Node 80 after node 30 in the linkedList: ");
 		myObj3.InsertAfter(30, 80);
 		myObj3.display();
+		
+		System.out.println("Delete a node 80 from linked List ");
+		myObj3.deleteNode(80);
+		myObj3.display();
 	}
 }
