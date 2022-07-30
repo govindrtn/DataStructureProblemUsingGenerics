@@ -96,4 +96,13 @@ public class LinkedListService<T> {
 		prevNode.next = tempNode.next;
 
 	}
+	public void size() {
+		INode<T> tempNode = head;
+		int count = 0;
+		while(tempNode != null) {
+			count++;
+			tempNode = tempNode.next;
+		}
+		System.out.println("Size Of LinkedList is : " + count);
+	}
 }

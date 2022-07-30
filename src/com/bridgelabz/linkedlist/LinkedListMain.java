@@ -51,5 +51,10 @@ public class LinkedListMain {
 		System.out.println("Delete a node 80 from linked List ");
 		myObj3.deleteNode(80);
 		myObj3.display();
+		
+		System.out.println("Size of LinkedList");
+		myObj3.add(59);
+		myObj3.size();
+		myObj3.display();
 	}
 }
